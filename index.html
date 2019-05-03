@@ -1,0 +1,86 @@
+<!-- Le Crystals Collector -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Crystals Collector</title>
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+  	<script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+
+	<div class="container-fluid" id="mainBox">
+		<div class="jumbotron">
+
+			<h1 class="text-center">THE CRYSTALS COLLECTOR</h1>
+
+			<h2 class="text-center">How to Play</h2>
+
+			<p class="text-center">
+                At the start of the game, you will be given a random number goal. Each crystal will also be assigned a random number value. Collect the crystals to accumulate points toward your random number goal. Extrapolate the value of each crystal based on the points you earn. Each new game will populate new values.
+			</p>
+			<p class="text-center">
+				Match your crystal points to your number goal EXACTLY to win. If you go over the goal, you lose.
+			</p>
+
+		</div>
+
+		<div class="row" id="game">
+
+			<!-- display goal number -->
+			<div class="col-md-3" id="numbers">
+				<h3 class="text-center" id="random">Match Number:</h3>
+				<h1 class="numberBox text-center" id="randomNumber">120</h1>
+			</div>
+
+			<!-- crystals buttons -->
+			<div class="col-md-10 text-center" id="buttons">
+
+				<button id="button-1" value="0"><img src="assets/images/diamond.jpg" class="img-responsive icons" id="icon1"></button>
+
+				<button id="button-2" value="0"><img src="assets/images/ruby.jpg" class="img-responsive icons" id="icon2"></button>
+
+				<button id="button-3" value="0"><img src="assets/images/emerald.jpg" class="img-responsive icons" id="icon3"></button>
+
+				<button id="button-4" value="0"><img src="assets/images/amethyst.jpg" class="img-responsive icons" id="icon4"></button>
+
+			</div>
+
+			<!-- third column for total points -->
+			<div class="col-md-3" id="totalPoints">
+				<h3 class="text-center" id="score">Your Total Score:</h3>
+				<h1 class="numberBox text-center" id="totalPoints">0</h1>
+			</div>
+
+		</div>
+
+		<!-- footer section with tracking wins and losses -->
+		<div class="row" id="score">
+
+			<!-- spacer column -->
+			<div class="col-md-4"></div>
+
+			<!-- wins column -->
+			<div class="col-md-2" id="win-area">
+				<h3 class="text-center" id="wins">Wins:	0</h3>
+			</div>
+
+			<!-- losses column -->
+			<div class="col-md-2" id="loss-area">
+				<h3 class="text-center" id="losses">Losses: 0</h3>
+			</div>
+
+			<div class="col-md-4"></div>
+
+		</div>
+	</div>
+</body>
+
+<script src="./assets/javascript/game.js"></script>
+
+</html>
